@@ -34,9 +34,9 @@ public class BasicProcedures {
 
 		int temp = Integer.MAX_VALUE;
 
-		for (int i = 0; i < ar.length; i++) {
-			if (temp > ar[i]) {
-				temp = ar[i];
+		for(int i:ar) {
+			if (temp > i) {
+				temp = i;
 
 			}
 
@@ -49,9 +49,9 @@ public class BasicProcedures {
 	private static int getMax(int[] ar) {
 		int temp = Integer.MIN_VALUE;
 
-		for (int i = 0; i < ar.length; i++) {
-			if (temp < ar[i]) {
-				temp = ar[i];
+		for (int i:ar) {
+			if (temp < i) {
+				temp = i;
 			}
 
 		}
@@ -60,8 +60,8 @@ public class BasicProcedures {
 
 	private static int getSum(int[] ar) {
 		int total = 0;
-		for(int i=0;i<ar.length;i++) {
-			 total = total + ar[i];
+		for(int i:ar) {
+			 total = total + i;
 		}
 		return total;
 	}
